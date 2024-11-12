@@ -6,7 +6,7 @@ COPY . .
 
 RUN go build -ldflags="-s -w" main.go
 
-FROM scratch as release-stage
+FROM scratch AS release-stage
 
 WORKDIR /app
 
